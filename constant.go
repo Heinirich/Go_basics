@@ -4,7 +4,15 @@ import (
 	"fmt"
 )
 
+const _ = iota
+//iota is a constant
 const a = iota
+
+const (
+	_ =  iota
+	b = iota
+	c
+)
 
 func main()  {
 	//typed Constants
@@ -15,4 +23,6 @@ func main()  {
 	fmt.Printf("%v ,%T\n",x,x)
 
 	fmt.Printf("%v ,%T\n",y,y)
+
+	fmt.Println(c)
 }
